@@ -10,9 +10,10 @@ import pages.LoginPage;
 public class OkTest {
 
     private LoginPage loginPage;
-    private final String okEmail = "voron00100867@gmail.com";
-    private final String okPassword = "passw0rdT0L0g1n";
-    private final String username = "воронина елизавета";
+    private final Data data = new Data();
+    private final String okEmail = data.getOkEmail();
+    private final String okPassword = data.getOkPassword();
+    private final String username = data.getUsername();
 
 
     @BeforeAll
