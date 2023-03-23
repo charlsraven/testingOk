@@ -5,7 +5,11 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import pages.FeedPage;
 import pages.LoginPage;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 public class OkTest {
 
@@ -46,6 +50,20 @@ public class OkTest {
                 .loginWithButton(okEmail, okPassword)
                 .getNameSign()
                 .shouldHave(Condition.text(username));
+    }
+
+    @Test
+    public void successfulAuthorazationTestIgnoreCase() {
+        FeedPage feedPage = loginPage.open()
+                .loginWithButton(okEmail, okPassword);
+        assertThat(feedPage.getNameSign().text(), equalToIgnoringCase(username.toUpperCase()));
+    }
+
+    @Test
+    public void successfulAuthorazationTestCorrectUsernamePattern() {
+        FeedPage feedPage = loginPage.open()
+                .loginWithButton(okEmail, okPassword);
+        assertThat(feedPage.getNameSign().text(), CorrectUsername.correctUsername(username.toUpperCase()));
     }
 
 }
