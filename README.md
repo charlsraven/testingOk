@@ -5,17 +5,9 @@ public class Data {
     private final String okEmail = "";
     private final String okPassword = "";
     private final String username = "";
-
-    public String getOkEmail() {
-        return okEmail;
-    }
-
-    public String getOkPassword() {
-        return okPassword;
-    }
-
-    public String getUsername() {
-        return username;
-    }
+    private final String name = "";
+    private final String surname = "";
+...
 }
 ```
+с соответствующими геттерами
