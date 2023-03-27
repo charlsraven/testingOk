@@ -1,3 +1,5 @@
+package customMatchers;
+
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
@@ -12,7 +14,7 @@ public class CorrectUsername extends TypeSafeMatcher<String> {
 
     @Override
     protected boolean matchesSafely(String s) {
-        return s.toLowerCase().equals(s) && s.matches(".+ .+");
+        return s.matches("\\w+ \\w+");
     }
 
     @Override

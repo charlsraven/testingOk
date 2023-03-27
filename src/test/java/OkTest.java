@@ -1,6 +1,7 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import customMatchers.CorrectUsername;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -45,24 +46,27 @@ public class OkTest {
     }
 
     @Test
+    public void findLoginButtonTest() {
+        loginPage.open().getLoginButtonElement().shouldHave(Condition.value("Log in to OK"));
+    }
+
+    @Test
     public void successfulAuthorizationButtonTest() {
-        loginPage.open()
-                .loginWithButton(okEmail, okPassword)
+        loginPage.open().getLoginButtonElement().shouldBe(Condition.visible);
+        loginPage.loginWithButton(okEmail, okPassword)
                 .getNameSign()
                 .shouldHave(Condition.text(username));
     }
 
     @Test
     public void successfulAuthorazationTestIgnoreCase() {
-        FeedPage feedPage = loginPage.open()
-                .loginWithButton(okEmail, okPassword);
+        FeedPage feedPage = loginPage.open().login(okEmail, okPassword);
         assertThat(feedPage.getNameSign().text(), equalToIgnoringCase(username.toUpperCase()));
     }
 
     @Test
     public void successfulAuthorazationTestCorrectUsernamePattern() {
-        FeedPage feedPage = loginPage.open()
-                .loginWithButton(okEmail, okPassword);
+        FeedPage feedPage = loginPage.open().login(okEmail, okPassword);
         assertThat(feedPage.getNameSign().text(), CorrectUsername.correctUsername(username.toUpperCase()));
     }
 

@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="hw1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CorrectUsername.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testingFeedPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="work at class">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/elements/TopBarElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CorrectUsername.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customMatchers/CorrectUsername.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/FeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/FeedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/FeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FeedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testingFeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeedPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,16 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -31,6 +46,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="work_at_class" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,11 +66,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.OkTest.successfulAuthorazationTestCorrectUsernamePattern">
-    <configuration name="OkTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SettingsPageTest.changeSurnameTest">
+    <configuration name="SettingsPageTest.changeNameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -63,7 +86,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OkTest&quot;" />
+            <option value="&quot;SettingsPageTest.changeNameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -73,7 +96,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OkTest.successfulAuthorazationTestCorrectUsernamePattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SettingsPageTest.changeSurnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -86,7 +109,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OkTest.successfulAuthorazationTestCorrectUsernamePattern&quot;" />
+            <option value="&quot;SettingsPageTest.changeSurnameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -96,7 +119,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OkTest.successfulAuthorazationTestIgnoreCase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SettingsPageTest.getPopupPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -109,7 +132,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OkTest.successfulAuthorazationTestIgnoreCase&quot;" />
+            <option value="&quot;SettingsPageTest.getPopupPageTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -119,7 +142,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OkTest.successfulAuthorizationTabEnterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SettingsPageTest.nameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -132,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OkTest.successfulAuthorizationTabEnterTest&quot;" />
+            <option value="&quot;SettingsPageTest.nameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -142,7 +165,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="testingFeedPage.countingMenuElements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SettingsPageTest.surnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -155,7 +178,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;testingFeedPage.countingMenuElements&quot;" />
+            <option value="&quot;SettingsPageTest.surnameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.OkTest.successfulAuthorazationTestCorrectUsernamePattern" />
-        <item itemvalue="Gradle.testingFeedPage.countingMenuElements" />
-        <item itemvalue="Gradle.OkTest.successfulAuthorazationTestIgnoreCase" />
-        <item itemvalue="Gradle.OkTest" />
-        <item itemvalue="Gradle.OkTest.successfulAuthorizationTabEnterTest" />
+        <item itemvalue="Gradle.SettingsPageTest.changeSurnameTest" />
+        <item itemvalue="Gradle.SettingsPageTest.changeNameTest" />
+        <item itemvalue="Gradle.SettingsPageTest.surnameTest" />
+        <item itemvalue="Gradle.SettingsPageTest.nameTest" />
+        <item itemvalue="Gradle.SettingsPageTest.getPopupPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678977095791</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="work at class">
+      <created>1679595061251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679595061251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +244,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hw1" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw1" />
+    <MESSAGE value="work at class" />
+    <option name="LAST_COMMIT_MESSAGE" value="work at class" />
   </component>
 </project>
