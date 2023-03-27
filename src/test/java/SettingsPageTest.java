@@ -108,33 +108,28 @@ public class SettingsPageTest {
         assertThat(settingsPage.getUsername().text(),
                 equalTo(username.substring(0, username.indexOf(" ") + 1) + newSurname));
         assertThat(settingsPage.getInfo().text(),
-                equalTo(info.substring(0, info.indexOf(" ")+1) + newSurname + info.substring(info.indexOf(","))));
+                equalTo(info.substring(0, info.indexOf(" ") + 1) + newSurname + info.substring(info.indexOf(","))));
     }
 
 
-//    @Test
-//    public void changeNameAndSurnameTest() {
-//        String id = settingsPage.getId().text();
-//        String info = settingsPage.getInfo().text();
-//        String username = settingsPage.getUsername().text();
-//
-//        String newName = data.getName().toLowerCase();
-//        String newSurname = data.getSurname().toLowerCase();
-//        settingsPage.clickInfo().setName(newName);
-//        settingsPage.setSurname(newSurname);
-//        settingsPage.clickSave();
-//        refresh();
-//
-//        assertThat(settingsPage.getId().text(), equalTo(id));
-//        assertThat(settingsPage.getUsername().text(),
-//                equalTo(replaceEachOther(
-//                        username.replace(data.getName(), newName),
-//                        data.getSurname(), newSurname)));
-//        assertThat(settingsPage.getInfo().text(),
-//                equalTo(replaceEachOther(
-//                        info.replace(data.getName(), newName),
-//                        data.getSurname(), newSurname)));
-//    }
+    @Test
+    public void changeNameAndSurnameTest() {
+        String id = settingsPage.getId().text();
+        String info = settingsPage.getInfo().text();
+
+        String newName = data.getName().toLowerCase();
+        String newSurname = data.getSurname().toLowerCase();
+        settingsPage.clickInfo().setName(newName);
+        settingsPage.setSurname(newSurname);
+        settingsPage.clickSave();
+        refresh();
+
+        assertThat(settingsPage.getId().text(), equalTo(id));
+        assertThat(settingsPage.getUsername().text(),
+                equalTo(newName + " " + newSurname));
+        assertThat(settingsPage.getInfo().text(),
+                equalTo(newName + " " + newSurname + info.substring(info.indexOf(","))));
+    }
 
 
 }

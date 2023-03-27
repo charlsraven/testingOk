@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="work at class">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/TopBarElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="hw2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CorrectUsername.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customMatchers/CorrectUsername.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/FeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FeedPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testingFeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeedPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +62,30 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.SettingsPageTest.changeSurnameTest">
+  <component name="RunManager" selected="Gradle.SettingsPageTest.changeNameAndSurnameTest">
+    <configuration name="SettingsPageTest.changeNameAndSurnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SettingsPageTest.changeNameAndSurnameTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="SettingsPageTest.changeNameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -110,29 +123,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;SettingsPageTest.changeSurnameTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SettingsPageTest.getPopupPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;SettingsPageTest.getPopupPageTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SettingsPageTest.changeNameAndSurnameTest" />
         <item itemvalue="Gradle.SettingsPageTest.changeSurnameTest" />
         <item itemvalue="Gradle.SettingsPageTest.changeNameTest" />
         <item itemvalue="Gradle.SettingsPageTest.surnameTest" />
         <item itemvalue="Gradle.SettingsPageTest.nameTest" />
-        <item itemvalue="Gradle.SettingsPageTest.getPopupPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679595061251</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hw2">
+      <created>1679929361862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679929361862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +242,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hw1" />
     <MESSAGE value="work at class" />
-    <option name="LAST_COMMIT_MESSAGE" value="work at class" />
+    <MESSAGE value="hw2" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw2" />
   </component>
 </project>
