@@ -1,25 +1,41 @@
 package elements;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import pages.SettingsPage;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.page;
 
 public class TopBarElement {
-    private static final By SETTINGS_MENU = By.xpath("//*[@id=\"hook_Block_ToolbarUserDropdown\"]/div/div[1]");
-    private static final By GOTO_SETTINGS = By.xpath("//*[@id=\"user-dropdown-menu\"]/div[1]/div/div[2]/ul/li[1]/a");
+    private static final String DROPDOWN_MENU_CLASS = "toolbar_ucard";
+    private static final String SETTINGS_SELECTOR = "[data-l=\"t,settings\"]";
+    private static final String DROPDOWN_NAME_CLASS = "toolbar_accounts-user_name";
 
-    public SelenideElement getSettingsMenu() {
-        return $(SETTINGS_MENU);
+    public SelenideElement getDropdownMenu() {
+        return $(By.className(DROPDOWN_MENU_CLASS)).shouldBe(Condition.visible);
     }
 
-    public SelenideElement getGotoSettings() {
-        return $(GOTO_SETTINGS);
-    }
-
-    public TopBarElement clickSettings() {
-        getSettingsMenu().click();
+    public TopBarElement clickDropdown(){
+        getDropdownMenu().click();
         return this;
+    }
+
+    public SelenideElement getSettingsOnDropDownMenu() {
+        return $(By.cssSelector(SETTINGS_SELECTOR));
+    }
+
+    public SelenideElement getNameOnDropDownMenu() {
+        return $(DROPDOWN_NAME_CLASS);
+    }
+
+    public SettingsPage openSettingsPage() {
+        clickDropdown().getSettingsOnDropDownMenu().click();
+
+        var p = page(SettingsPage.class);
+        p.getUsername();
+        return p;
     }
 
 }

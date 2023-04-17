@@ -1,37 +1,36 @@
 package pages;
 
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import elements.TopBarElement;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.page;
 
 public class SettingsPage extends TopBarElement {
     private static final By USERNAME = By.className("compact-profile_a");
-    private static final By INFO = By.xpath("//*[@id=\"hook_Block_UserConfigMRB\"]/div[2]/div[2]/a[1]/div[2]/div");
-    private static final By ID = By.xpath("//*[@id=\"hook_Block_UserConfigMRB\"]/div[2]/div[2]/div/div[2]/div");
+    private static final By INFO = By.cssSelector(".user-settings_i_tx.textWrap");
+    private static final By PERSONAL_LINK = By.cssSelector("[data-l=\"t,personal_link\"]");
+    private static final By SETTING_VALUE = By.className("user-settings_i_tx");
     private static final String NAME_POPUP_NAME = "fr.name";
     private static final String NAME_POPUP_SURNAME = "fr.surname";
     private static final String ID_SAVE = "hook_FormButton_button_savePopLayerEditUserProfileNew";
+    private static final String URL = "https://ok.ru/settings";
 
-
-    public SettingsPage open() {
-        Selenide.open("https://ok.ru/settings");
-        return page(SettingsPage.class);
+    public String getURL() {
+        return URL;
     }
 
     public SelenideElement getUsername() {
-        return $(USERNAME);
+        return $(USERNAME).shouldBe(Condition.visible);
     }
 
     public SelenideElement getId() {
-        return $(ID);
+        return $(PERSONAL_LINK).$(SETTING_VALUE).shouldBe(Condition.visible);
     }
 
     public SelenideElement getInfo() {
-        return $(INFO);
+        return $(INFO).shouldBe(Condition.visible);
     }
 
     public SettingsPage clickInfo() {
@@ -40,12 +39,12 @@ public class SettingsPage extends TopBarElement {
     }
 
     public SelenideElement getNameElement() {
-        return $(By.name(NAME_POPUP_NAME));
+        return $(By.name(NAME_POPUP_NAME)).shouldBe(Condition.visible);
     }
 
 
     public SelenideElement getSurnameElement() {
-        return $(By.name(NAME_POPUP_SURNAME));
+        return $(By.name(NAME_POPUP_SURNAME)).shouldBe(Condition.visible);
     }
 
     public String getPopupName() {
@@ -56,18 +55,20 @@ public class SettingsPage extends TopBarElement {
         return getSurnameElement().getValue();
     }
 
-    public void setName(String name) {
+    public SettingsPage setName(String name) {
         getNameElement().clear();
         getNameElement().setValue(name);
+        return this;
     }
 
-    public void setSurname(String surname) {
+    public SettingsPage setSurname(String surname) {
         getSurnameElement().clear();
         getSurnameElement().setValue(surname);
+        return this;
     }
 
     public SelenideElement getSaveButton() {
-        return $(By.id(ID_SAVE));
+        return $(By.id(ID_SAVE)).shouldBe(Condition.visible);
     }
 
     public void clickSave() {

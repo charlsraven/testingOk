@@ -4,9 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="hw2">
+    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="hw2 uncommented">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/feed/CheckCountMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/feed/GotoSettingsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/CheckLoginButtonTextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCheckIgnoreCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCorrectUsernameInBarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationTabEnterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationWithButtonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameAndSurnameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeSurnameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectInfoUsernameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckSurnameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckUsernameOnPopupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/elements/TopBarElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/TopBarElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FeedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeedPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OkTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/customMatchers/CorrectUsername.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/matchers/CorrectUsername.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +88,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.SettingsPageTest.changeNameAndSurnameTest">
-    <configuration name="SettingsPageTest.changeNameAndSurnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ChangeNameAndSurnameTest.changeNameAndSurnameTest">
+    <configuration name="ChangeNameAndSurnameTest.changeNameAndSurnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -76,7 +102,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;SettingsPageTest.changeNameAndSurnameTest&quot;" />
+            <option value="&quot;ok.settings.ChangeNameAndSurnameTest.changeNameAndSurnameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -86,7 +112,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SettingsPageTest.changeNameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CheckLoginButtonTextTest.findLoginButtonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -99,7 +125,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;SettingsPageTest.changeNameTest&quot;" />
+            <option value="&quot;ok.login.CheckLoginButtonTextTest.findLoginButtonTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -109,7 +135,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SettingsPageTest.changeSurnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GetPopupPageTest.getPopupPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -122,7 +148,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;SettingsPageTest.changeSurnameTest&quot;" />
+            <option value="&quot;ok.settings.GetPopupPageTest.getPopupPageTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -132,7 +158,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SettingsPageTest.nameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GotoSettingsTest.gotoSettingsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -145,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;SettingsPageTest.nameTest&quot;" />
+            <option value="&quot;ok.feed.GotoSettingsTest.gotoSettingsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -155,7 +181,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SettingsPageTest.surnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SuccessfulAuthorizationTabEnterTest.successfulAuthorizationTabEnterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -168,7 +194,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;SettingsPageTest.surnameTest&quot;" />
+            <option value="&quot;ok.login.SuccessfulAuthorizationTabEnterTest.successfulAuthorizationTabEnterTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SettingsPageTest.changeNameAndSurnameTest" />
-        <item itemvalue="Gradle.SettingsPageTest.changeSurnameTest" />
-        <item itemvalue="Gradle.SettingsPageTest.changeNameTest" />
-        <item itemvalue="Gradle.SettingsPageTest.surnameTest" />
-        <item itemvalue="Gradle.SettingsPageTest.nameTest" />
+        <item itemvalue="Gradle.ChangeNameAndSurnameTest.changeNameAndSurnameTest" />
+        <item itemvalue="Gradle.SuccessfulAuthorizationTabEnterTest.successfulAuthorizationTabEnterTest" />
+        <item itemvalue="Gradle.GotoSettingsTest.gotoSettingsTest" />
+        <item itemvalue="Gradle.CheckLoginButtonTextTest.findLoginButtonTest" />
+        <item itemvalue="Gradle.GetPopupPageTest.getPopupPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679929361862</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hw2 uncommented">
+      <created>1679934427770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679934427770</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +276,7 @@
     <MESSAGE value="hw1" />
     <MESSAGE value="work at class" />
     <MESSAGE value="hw2" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw2" />
+    <MESSAGE value="hw2 uncommented" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw2 uncommented" />
   </component>
 </project>
