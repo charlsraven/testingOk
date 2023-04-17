@@ -23,7 +23,7 @@ public class SuccessfulAuthorizationWithButtonTest extends BaseTest {
 
     @Test
     public void successfulAuthorizationButtonTest() {
-        loginPage.open().getLoginButtonElement().shouldBe(Condition.visible);
+        loginPage.getLoginButtonElement().shouldBe(Condition.visible);
         assertEquals(username, loginPage.loginWithButton(okEmail, okPassword)
                 .getNameSign().text());
     }

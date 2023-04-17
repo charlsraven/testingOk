@@ -17,6 +17,16 @@ public class SettingsPage extends TopBarElement {
     private static final String ID_SAVE = "hook_FormButton_button_savePopLayerEditUserProfileNew";
     private static final String URL = "https://ok.ru/settings";
 
+    public SettingsPage() {
+        check();
+    }
+
+    private void check() {
+        getUsername().shouldBe(Condition.visible.because("it is correct username"));
+        getInfo().shouldBe(Condition.visible.because("it is correct info"));
+        $(PERSONAL_LINK).shouldBe(Condition.visible.because("it is a container for id"));
+    }
+
     public String getURL() {
         return URL;
     }
@@ -41,7 +51,6 @@ public class SettingsPage extends TopBarElement {
     public SelenideElement getNameElement() {
         return $(By.name(NAME_POPUP_NAME)).shouldBe(Condition.visible);
     }
-
 
     public SelenideElement getSurnameElement() {
         return $(By.name(NAME_POPUP_SURNAME)).shouldBe(Condition.visible);

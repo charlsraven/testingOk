@@ -1,6 +1,5 @@
 package ok.settings;
 
-import com.codeborne.selenide.SelenideElement;
 import ok.BaseTest;
 import ok.Data;
 import org.jetbrains.annotations.NotNull;
@@ -22,7 +21,7 @@ public class ChangeSurnameTest extends BaseTest {
 
     @BeforeEach
     public void openSettingsPage() {
-        settingsPage = new LoginPage().open().login(DATA.getOkEmail(), DATA.getOkPassword())
+        settingsPage = new LoginPage().login(DATA.getOkEmail(), DATA.getOkPassword())
                 .openSettingsPage();
     }
 
@@ -40,9 +39,9 @@ public class ChangeSurnameTest extends BaseTest {
         settingsPage.clickInfo().setSurname(newSurname).clickSave();
 
         refresh();
-        SelenideElement idElement = settingsPage.getId();
+        settingsPage = new SettingsPage();
 
-        assertThat(idElement.text(), equalTo(id));
+        assertThat(settingsPage.getId().text(), equalTo(id));
         assertThat(settingsPage.getUsername().text(),
                 equalTo(username.substring(0, username.indexOf(" ") + 1) + newSurname));
         assertThat(settingsPage.getInfo().text(),

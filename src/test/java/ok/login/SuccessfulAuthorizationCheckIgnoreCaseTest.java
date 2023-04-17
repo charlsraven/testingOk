@@ -24,7 +24,7 @@ public class SuccessfulAuthorizationCheckIgnoreCaseTest extends BaseTest {
 
     @Test
     public void successfulAuthorizationIgnoreCaseTest() {
-        FeedPage feedPage = loginPage.open().login(okEmail, okPassword);
+        FeedPage feedPage = loginPage.login(okEmail, okPassword);
         assertThat(feedPage.getNameSign().text(), equalToIgnoringCase(username.toUpperCase()));
     }
 }

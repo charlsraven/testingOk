@@ -15,7 +15,7 @@ public class CheckCorrectDataTest extends BaseTest {
 
     @BeforeEach
     public void openSettingsPage() {
-        settingsPage = new LoginPage().open().login(DATA.getOkEmail(), DATA.getOkPassword())
+        settingsPage = new LoginPage().login(DATA.getOkEmail(), DATA.getOkPassword())
                 .openSettingsPage();
     }
 

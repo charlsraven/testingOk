@@ -24,7 +24,7 @@ public class SuccessfulAuthorizationCorrectUsernameInBarTest extends BaseTest {
 
     @Test
     public void successfulAuthorizationCorrectUsernameInBarTest() {
-        FeedPage feedPage = loginPage.open().login(okEmail, okPassword);
+        FeedPage feedPage = loginPage.login(okEmail, okPassword);
         assertEquals(username, feedPage.getNameOnDropDownMenu().innerText());
     }
 }

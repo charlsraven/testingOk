@@ -1,6 +1,5 @@
 package ok.settings;
 
-import com.codeborne.selenide.SelenideElement;
 import ok.BaseTest;
 import ok.Data;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +17,7 @@ public class ChangeNameAndSurnameTest extends BaseTest {
 
     @BeforeEach
     public void openSettingsPage() {
-        settingsPage = new LoginPage().open().login(DATA.getOkEmail(), DATA.getOkPassword())
+        settingsPage = new LoginPage().login(DATA.getOkEmail(), DATA.getOkPassword())
                 .openSettingsPage();
     }
 
@@ -32,9 +31,9 @@ public class ChangeNameAndSurnameTest extends BaseTest {
         settingsPage.clickInfo().setName(newName).setSurname(newSurname).clickSave();
 
         refresh();
-        SelenideElement idElement = settingsPage.getId();
+        settingsPage = new SettingsPage();
 
-        assertThat(idElement.text(), equalTo(id));
+        assertThat(settingsPage.getId().text(), equalTo(id));
         assertThat(settingsPage.getUsername().text(),
                 equalTo(newName + " " + newSurname));
         assertThat(settingsPage.getInfo().text(),

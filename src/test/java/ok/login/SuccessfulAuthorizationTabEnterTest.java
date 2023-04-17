@@ -22,7 +22,7 @@ public class SuccessfulAuthorizationTabEnterTest extends BaseTest {
 
     @Test
     public void successfulAuthorizationTabEnterTest() {
-        assertEquals(username, loginPage.open()
+        assertEquals(username, loginPage
                 .login(okEmail, okPassword)
                 .getNameSign().text());
     }

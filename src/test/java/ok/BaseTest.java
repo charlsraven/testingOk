@@ -10,6 +10,7 @@ public class BaseTest {
     public static void beforeAll() {
         Configuration.browser = "chrome";
         Configuration.baseUrl = "https://ok.ru";
+        Selenide.open("/");
     }
     @AfterEach
     public void afterEach() {

@@ -4,35 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="hw2 uncommented">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/feed/CheckCountMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/feed/GotoSettingsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/CheckLoginButtonTextTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCheckIgnoreCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCorrectUsernameInBarTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationTabEnterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationWithButtonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameAndSurnameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeSurnameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectInfoUsernameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckSurnameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckUsernameOnPopupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="e945a3a8-2852-4e2c-8559-4098832f5a8f" name="Changes" comment="hw2 closing issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/elements/TopBarElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/TopBarElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FeedPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FeedPageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OkTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SettingsPageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/customMatchers/CorrectUsername.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/matchers/CorrectUsername.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/feed/CheckCountMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/feed/CheckCountMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/feed/GotoSettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/feed/GotoSettingsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/login/CheckLoginButtonTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/login/CheckLoginButtonTextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCheckIgnoreCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCheckIgnoreCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCorrectUsernameInBarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationCorrectUsernameInBarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationTabEnterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationTabEnterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationWithButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/login/SuccessfulAuthorizationWithButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameAndSurnameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameAndSurnameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeNameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeSurnameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/settings/ChangeSurnameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectInfoUsernameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckCorrectInfoUsernameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/settings/CheckSurnameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckSurnameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ok/settings/CheckUsernameOnPopupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ok/settings/CheckUsernameOnPopupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +79,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.ChangeNameAndSurnameTest.changeNameAndSurnameTest">
+  <component name="RunManager" selected="Gradle.SuccessfulAuthorizationCorrectUsernameInBarTest.successfulAuthorizationCorrectUsernameInBarTest">
     <configuration name="ChangeNameAndSurnameTest.changeNameAndSurnameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,7 +103,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CheckLoginButtonTextTest.findLoginButtonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SuccessfulAuthorizationCheckIgnoreCaseTest.successfulAuthorizationIgnoreCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -125,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ok.login.CheckLoginButtonTextTest.findLoginButtonTest&quot;" />
+            <option value="&quot;ok.login.SuccessfulAuthorizationCheckIgnoreCaseTest.successfulAuthorizationIgnoreCaseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,7 +126,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GetPopupPageTest.getPopupPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SuccessfulAuthorizationCorrectUsernameInBarTest.successfulAuthorizationCorrectUsernameInBarTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -148,30 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ok.settings.GetPopupPageTest.getPopupPageTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GotoSettingsTest.gotoSettingsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ok.feed.GotoSettingsTest.gotoSettingsTest&quot;" />
+            <option value="&quot;ok.login.SuccessfulAuthorizationCorrectUsernameInBarTest.successfulAuthorizationCorrectUsernameInBarTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,13 +172,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="SuccessfulAuthorizationWithButtonTest.successfulAuthorizationButtonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ok.login.SuccessfulAuthorizationWithButtonTest.successfulAuthorizationButtonTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SuccessfulAuthorizationCorrectUsernameInBarTest.successfulAuthorizationCorrectUsernameInBarTest" />
         <item itemvalue="Gradle.ChangeNameAndSurnameTest.changeNameAndSurnameTest" />
+        <item itemvalue="Gradle.SuccessfulAuthorizationWithButtonTest.successfulAuthorizationButtonTest" />
         <item itemvalue="Gradle.SuccessfulAuthorizationTabEnterTest.successfulAuthorizationTabEnterTest" />
-        <item itemvalue="Gradle.GotoSettingsTest.gotoSettingsTest" />
-        <item itemvalue="Gradle.CheckLoginButtonTextTest.findLoginButtonTest" />
-        <item itemvalue="Gradle.GetPopupPageTest.getPopupPageTest" />
+        <item itemvalue="Gradle.SuccessfulAuthorizationCheckIgnoreCaseTest.successfulAuthorizationIgnoreCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679934427770</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hw2 closing issue">
+      <created>1681716157823</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681716157823</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,6 +275,7 @@
     <MESSAGE value="work at class" />
     <MESSAGE value="hw2" />
     <MESSAGE value="hw2 uncommented" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw2 uncommented" />
+    <MESSAGE value="hw2 closing issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw2 closing issue" />
   </component>
 </project>

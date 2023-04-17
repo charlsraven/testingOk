@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
@@ -14,9 +13,14 @@ public class LoginPage {
     private static final By PASSWORD_LOCATOR = By.id("field_password");
     private static final By LOGIN_BUTTON_LOCATOR = By.cssSelector("[data-l=\"t,sign_in\"]");
 
-    public LoginPage open() {
-        Selenide.open("/");
-        return this;
+    public LoginPage() {
+        check();
+    }
+
+    private void check() {
+        getUsernameElement().shouldBe(Condition.visible.because("it is username field"));
+        getPasswordElement().shouldBe(Condition.visible.because("it is password field"));
+        getLoginButtonElement().shouldBe(Condition.visible.because("it is log in button"));
     }
 
     public SelenideElement getUsernameElement() {

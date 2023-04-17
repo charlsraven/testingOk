@@ -1,6 +1,5 @@
 package elements;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import pages.SettingsPage;
@@ -14,7 +13,7 @@ public class TopBarElement {
     private static final String DROPDOWN_NAME_CLASS = "toolbar_accounts-user_name";
 
     public SelenideElement getDropdownMenu() {
-        return $(By.className(DROPDOWN_MENU_CLASS)).shouldBe(Condition.visible);
+        return $(By.className(DROPDOWN_MENU_CLASS));
     }
 
     public TopBarElement clickDropdown(){
@@ -22,12 +21,15 @@ public class TopBarElement {
         return this;
     }
 
-    public SelenideElement getSettingsOnDropDownMenu() {
+    private SelenideElement getSettingsOnDropDownMenu() {
         return $(By.cssSelector(SETTINGS_SELECTOR));
     }
 
+    private SelenideElement getDropdownName() {
+        return $(By.className(DROPDOWN_NAME_CLASS));
+    }
     public SelenideElement getNameOnDropDownMenu() {
-        return $(DROPDOWN_NAME_CLASS);
+        return clickDropdown().getDropdownName();
     }
 
     public SettingsPage openSettingsPage() {

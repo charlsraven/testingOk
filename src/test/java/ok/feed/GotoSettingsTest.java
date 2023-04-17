@@ -17,7 +17,7 @@ public class GotoSettingsTest extends BaseTest {
     @BeforeEach
     public void beforeEach() {
         final Data data = new Data();
-        feedPage = new LoginPage().open().login(data.getOkEmail(), data.getOkPassword());
+        feedPage = new LoginPage().login(data.getOkEmail(), data.getOkPassword());
     }
 
     @Test

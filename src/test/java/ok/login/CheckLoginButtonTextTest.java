@@ -15,6 +15,6 @@ public class CheckLoginButtonTextTest extends BaseTest {
     }
     @Test
     public void findLoginButtonTest() {
-        assertEquals("Log in to OK", loginPage.open().getLoginButtonElement().getValue());
+        assertEquals("Log in to OK", loginPage.getLoginButtonElement().getValue());
     }
 }
